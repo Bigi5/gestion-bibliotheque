@@ -31,3 +31,9 @@ Modifiez le fichier .env avec vos informations de base de données, puis exécut
 👤 Gestion des utilisateurs
 📅 Gestion des prêts et retours
 
+🤝 #Contribuer
+    Forker le projet 🍴
+    Créer une branche 🔀 (git checkout -b feature-nouvelle-fonctionnalite)
+    Committer vos modifications 🎯 (git commit -m "Ajout d'une nouvelle fonctionnalité")
+    Pousser la branche 📤 (git push origin feature-nouvelle-fonctionnalite)
+    Ouvrir une Pull Request 🛠️
