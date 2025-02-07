@@ -1,0 +1,10 @@
+/* resources/css/app.css */
+
+/* Importer les bases de Tailwind */
+@tailwind base;
+
+/* Importer les composants de Tailwind */
+@tailwind components;
+
+/* Importer les utilitaires de Tailwind */
+@tailwind utilities;

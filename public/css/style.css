@@ -1,0 +1,67 @@
+/* public/css/style.css */
+:root {
+    --light-gray: #dad9dc;
+    --primary-blue: #145fad;
+    --dark-gray: #1a1a1a;
+    --orange: #e64614;
+    --dark-blue: #042888;
+}
+
+body {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+h1, h2, h3, h4 {
+    color: var(--primary-blue);
+}
+
+.table {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+.table th {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.table td {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+.btn-primary {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+.btn-return {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: white;
+}
+
+.btn-return:hover {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+.navbar {
+    background-color: var(--dark-blue);
+}
+
+.navbar a {
+    color: white;
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+}
