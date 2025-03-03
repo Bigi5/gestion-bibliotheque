@@ -59,53 +59,12 @@
         </div>
     </div>
 
-    <!-- Historique des Emprunts et Retours -->
-    <div class="borrow-history-section">
-        <div class="section-title">
-            <h2>Historique des Emprunts et Retours</h2>
-        </div>
-        <div class="history-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Date de l'Emprunt</th>
-                        <th>Nom du Livre</th>
-                        <th>Date du Retour</th>
-                        <th>Statut</th>
-                    </tr>
-                </thead>
-                <tbody>
-                @if($borrowerProfile->borrows)
-                    @forelse($borrowerProfile->borrows as $borrow)
-                        <tr>
-                            <td>{{ $borrow->borrowed_at ? $borrow->borrowed_at->format('d/m/Y') : 'Date non définie' }}</td>
-                            <td>{{ $borrow->book->title }}</td>
-                            <td>{{ $borrow->returned_at ? $borrow->returned_at->format('d/m/Y') : 'Non retourné' }}</td>
-                            <td>
-                                @if($borrow->returned_at)
-                                    <span class="status-returned">Retourné</span>
-                                @else
-                                    <span class="status-not-returned">Non retourné</span>
-                                @endif
-                            </td>
-                        </tr>
-                    @empty
-                        <tr>
-                            <td colspan="4" class="text-center">Aucun emprunt enregistré pour cet emprunteur.</td>
-                        </tr>
-                    @endforelse
-                @endif
-                </tbody>
-            </table>
-        </div>
+    
+
+    <!-- Bouton Retour -->
+    <div class="back-button">
+        <a href="{{ route('borrower_profiles.index') }}" class="btn-back">Retour aux Profils Emprunteurs</a>
     </div>
-
-    <!-- Bouton Retour -->
-    <!-- Bouton Retour -->
-<div class="back-button">
-    <a href="{{ route('borrower_profiles.index') }}" class="btn-back">Retour aux Profils Emprunteurs</a>
-</div>
-
 </div>
 @endsection
 
@@ -238,20 +197,19 @@
         margin-top: 2rem;
     }
 
-   /* Style spécifique au bouton de retour */
-.btn-back {
-    background-color: #145fad;
-    color: white;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s;
-}
+    /* Style spécifique au bouton de retour */
+    .btn-back {
+        background-color: #145fad;
+        color: white;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s;
+    }
 
-.btn-back:hover {
-    background-color: #0b4772;
-}
-
+    .btn-back:hover {
+        background-color: #0b4772;
+    }
 </style>
 @endsection

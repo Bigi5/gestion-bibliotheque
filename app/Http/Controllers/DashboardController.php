@@ -31,7 +31,7 @@ class DashboardController extends Controller
     $books = Book::all();
 
     // Statistiques sur les livres
-    $totalBooks = Book::count();
+    $totalBooks = Book::sum('copies_total');
     $availableBooks = Book::sum('copies_available'); // Somme de toutes les copies disponibles
     $borrowedBooks = Borrow::where('status', 'emprunte')->count(); 
 

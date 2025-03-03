@@ -121,7 +121,7 @@
         .login-btn {
             width: 100%;
             padding: 12px;
-            background-color: rgb(231, 79, 29);
+            background-color:#434a95;
             color: white;
             border: none;
             border-radius: 5px;
@@ -130,10 +130,8 @@
         }
 
         .login-btn:hover {
-            background-color: #d86828;
+            background-color: rgb(231, 79, 29);
         }
-
-       
 
         @media (max-width: 768px) {
             body {
@@ -181,7 +179,7 @@
                 <!-- Mot de passe oublié -->
                 <div class="forgot-password">
                     @if (Route::has('password.request'))
-                    <a href="{{ route('password.request') }}">Mot de passe oublié ?</a>
+                    <a href="{{ route('reset-password') }}">Mot de passe oublié ?</a>
                     @endif
                 </div>
 
@@ -201,17 +199,15 @@
 
     <!-- Section droite : image -->
     <div class="image-container"></div>
-
+    
     <script>
         const togglePassword = document.getElementById('togglePassword');
         const passwordField = document.getElementById('password');
 
         togglePassword.addEventListener('click', () => {
-            // Alterne entre les types de champ de mot de passe
             const type = passwordField.type === 'password' ? 'text' : 'password';
             passwordField.type = type;
 
-            // Change l'icône
             togglePassword.classList.toggle('fa-eye');
             togglePassword.classList.toggle('fa-eye-slash');
         });

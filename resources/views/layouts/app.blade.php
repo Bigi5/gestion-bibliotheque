@@ -20,7 +20,7 @@
         /* Sidebar Styles */
         .sidebar {
             width: 250px;
-            background-color: #f4f4f9; /* Même fond que le header */
+            background-color:lightgray; /* Même fond que le header */
             color: black; /* Texte noir pour contraste */
             height: 100vh;
             position: fixed;

@@ -88,23 +88,17 @@
 
         .btn-return {
             background-color: #28a745;
-            color: dark;
+            color: white;
         }
 
-        .btn-return:hover {
-            background-color: #218838;
-            color: #fff;
-        }
+        
 
         .btn-delete {
             background-color: #e53935;
-            color: dark;
+            color: white;
         }
 
-        .btn-delete:hover {
-            background-color: #c62828;
-            color: #fff;
-        }
+       
 
         /* Pagination */
         .pagination {

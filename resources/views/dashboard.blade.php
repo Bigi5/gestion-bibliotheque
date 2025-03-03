@@ -43,7 +43,7 @@
         }
 
         .block h2 {
-            color: #7d0c9d;
+            color:rgb(52, 11, 234);
             margin-bottom: 20px;
         }
 
@@ -204,7 +204,7 @@
                 <h2><strong>Statistiques des Livres</strong></h2>
                 <div class="sub-block-container">
                     <div class="sub-block block-1">
-                        <strong>Total Livres</strong>
+                        <strong>Exemplaires totaux</strong>
                         <div class="sub-block-content" id="total-livres">{{ $totalBooks }}</div>
                     </div>
                     <div class="sub-block block-2">
@@ -242,33 +242,6 @@
                 <canvas id="bookPieChart"></canvas>
             </div>
         </div>
-
-        <!-- Tableau des statistiques -->
-        <div class="table-block">
-            <h2><strong>Statistiques par période</strong></h2>
-            <div class="table-container">
-                <table id="stats-table">
-                    <thead>
-                        <tr>
-                            <th>Période</th>
-                            <th>Profils emprunteurs</th>
-                            <th>Livres Empruntés</th>
-                            <th>Livres Disponibles</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Données dynamiques ici -->
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Total</td>
-                            <td>{{ $totalBorrowers }}</td>
-                            <td>{{ $borrowedBooks }}</td>
-                            <td>{{ $availableBooks }}</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
         </div>
     </div>
     <script>
